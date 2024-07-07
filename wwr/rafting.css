@@ -7,6 +7,28 @@ body {
     padding: 20px;
     margin: 0 auto;
 }
+.nav-container {
+  max-width: 1300px;
+  max-height: 15px;
+  margin:  auto; /* center the container */
+  padding: 20px; /* add some padding around the container */
+  background-color: #f7f7f7; /* add a background color to the container */
+  border-bottom: 1px solid #ddd; /* add a bottom border to the container */
+  display: flex; /* make the container a flex container */
+  grid-column: ;
+  justify-content: flex-end; /* distribute the navigation elements evenly */
+  align-items: center; /* vertically center the navigation elements */
+}
+.nav a {
+  text-decoration: none;
+  flex-flow: row-reverse;
+}
+.container {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #daf9ff;
+}
 :root {
     --primary-color: #64c1e6;
     --secondary-color: #0a2f5c;
@@ -35,22 +57,26 @@ body {
   }
   nav {
     background-color: var(--nav-background-color);
-    font-size: 1.2rem;
+    max-height: 30%;
+    font-size: 2.0rem;
     display: flex;
   }
   nav a {
     display: block;
-    color: var(--nav-link-color);
+    color: #daf9ff;
     text-decoration: none;
     padding: 1rem;
   }
   nav a:link, nav a:visited {
     color: var(--navv-link-color);
+    align-items: center ;
   }
-nav a:hover {
+  nav a:hover {
     color: var(--nav-hover-link-color);
+    max-height: auto;
     background-color: var(--nav-hover-background-color);
-}
+    max-width: auto;
+
 .hero img{
     width: 100%;
     height: auto;
@@ -99,4 +125,22 @@ nav a:hover {
 a {
     text-decoration: none;
     color: black;
+}
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-right: 20px; /* adjust the margin to your liking */
+}
+
+header nav ul li:last-child {
+  margin-right: 0;
+}
+.footer-container {
+  background-color: #daf9ff;
 }
