@@ -1,23 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-body {
+
+:root {
+  --primary-color: #64c1e6;
+  --secondary-color: #0a2f5c;
+  --accent1-color: #daf9ff;
+  --accent2-color: #f2ead9;
+
+  --heading-font: 'oswald', serif;
+  --paragraph-font: 'roboto', serif;
+
+  --nav-background-color: #e7ddcc;
+  --nav-link-color: #52bbe7;
+  --navv-link-color: #5dd2f3;
+  --nav-hover-link-color: #f2ead9;
+  --nav-hover-background-color: #fffff2;
+}body {
     font-family: var(--paragraph-font);
     color: var(--secondary-color);
     max-width: 80%;
     padding: 20px;
     margin: 0 auto;
 }
-.nav-container {
-  max-width: 1300px;
+
+
+}
+/* .nav-container {
+margin-right: end;
+  max-width: 50px;
   max-height: 15px;
-  margin:  auto; /* center the container */
-  padding: 20px; /* add some padding around the container */
-  background-color: #f7f7f7; /* add a background color to the container */
+  padding: 20px; /* add some padding around the container
   border-bottom: 1px solid #ddd; /* add a bottom border to the container */
-  display: flex; /* make the container a flex container */
-  grid-column: ;
-  justify-content: flex-end; /* distribute the navigation elements evenly */
-  align-items: center; /* vertically center the navigation elements */
+  /* display: flex; /* make the container a flex container */
+  /* align-items: flex-end; */
+  /* justify-content: flex-end; distribute the navigation elements evenly */
+  /* align-items: center; vertically center the navigation elements */
+
+.nav-container li {
+  margin-right: 20px;
+}
+.nav-container a #1 {
+  text-decoration: none;
+  color: #5dd2f3;
 }
 .nav a {
   text-decoration: none;
@@ -29,21 +53,6 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 5px #daf9ff;
 }
-:root {
-    --primary-color: #64c1e6;
-    --secondary-color: #0a2f5c;
-    --accent1-color: #daf9ff;
-    --accent2-color: #f2ead9;
-  
-    --heading-font: 'oswald', serif;
-    --paragraph-font: 'roboto', serif;
-  
-    --nav-background-color: #e7ddcc;
-    --nav-link-color: #52bbe7;
-    --navv-link-color: #5dd2f3;
-    --nav-hover-link-color: #f2ead9;
-    --nav-hover-background-color: #fffff2;
-  }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -55,27 +64,40 @@ body {
   p {
     padding: 25px;
   }
+  .nav-container ul {
+    background-position: 0px;
+    max-width: 700px;
+    list-style: none;
+    position: relative;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
   nav {
-    background-color: var(--nav-background-color);
+    background-color: #f2ead9;
+    float: right;
     max-height: 30%;
+    width: 1000px;
     font-size: 2.0rem;
     display: flex;
   }
   nav a {
     display: block;
-    color: #daf9ff;
+    align-items: center;
+    max-width: 70px;
+    color: #fffff2;
     text-decoration: none;
     padding: 1rem;
   }
   nav a:link, nav a:visited {
     color: var(--navv-link-color);
-    align-items: center ;
   }
   nav a:hover {
     color: var(--nav-hover-link-color);
-    max-height: auto;
+    max-height: 20px;
     background-color: var(--nav-hover-background-color);
-    max-width: auto;
 
 .hero img{
     width: 100%;
@@ -90,7 +112,7 @@ body {
 .hero h1 {
     opacity: 0.8;
     padding: 5px;
-    width: 70%;
+    width: 80%;
     box-sizing: border-box;
     position: absolute;
     top: 5%;
