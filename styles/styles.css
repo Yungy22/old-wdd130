@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 nav {
+    display: flex;
+    justify-content: space-around;
     background-color: steelblue;
     padding: 10px;
 }
@@ -12,6 +14,9 @@ nav a {
 h1 {
     color: steelblue;
 }
+main {
+    max-width: 840px;
+}
 main img {
     width: 200px;
     height: auto;
@@ -21,7 +26,7 @@ main img {
     float: right;
 }
 p {
-    padding: 10px;
+    padding: 0;
 }
 *{
 margin : 0;
@@ -37,15 +42,23 @@ box-sizing: border-box;
     background-color: #ddd;
     color: #000;
 }
-
-aside {
-    width: 20em;
+footer {
+    margin-top: 15px;
+    border-bottom: 1px solid #000;
     text-align: center;
 }
-aside h2 {
-    position:absolute;
-    top: 47px;
-    left: 150px;
+aside {
+    width: 20em;
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+aside img {
+    width: 200px;
+    height: auto;
 }
 a {
     text-decoration: none;
