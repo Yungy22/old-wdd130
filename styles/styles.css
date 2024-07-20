@@ -1,69 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: steelblue;
-    padding: 10px;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
-h1 {
-    color: steelblue;
-}
-main {
-    max-width: 840px;
-}
-main img {
-    width: 200px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-}
-p {
-    padding: 0;
-}
-*{
-margin : 0;
-padding: O;
-box-sizing: border-box;
-}
-
-/* Class Selectors */
-.box {
-    margin: 1rem;
-    border : 1px solid rgba(0,0,0,.1);
-    padding: 1rem ;
-    background-color: #ddd;
-    color: #000;
-}
-footer {
-    margin-top: 15px;
-    border-bottom: 1px solid #000;
-    text-align: center;
-}
-aside {
-    width: 20em;
-    margin: 1rem;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
-aside img {
-    width: 200px;
-    height: auto;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-body {
-    font-family: var(--);
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logan Young | WDD 130</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<!--6.22.2024-->
+<body>
+  <header>
+    <nav>
+      <a href="#">home</a>
+      <a href="wwr/"> Introduction</a>
+      <a href="wwr/Logan-Young">Meet Logan</a>
+      <a href="https://linkedin.com"> linkedin </a>
+      <a href="https://facebook.com"> facebook </a>
+    </nav>
+  </header>
+  <div class="grid">
+    <main>
+      <h1>Logan Young | WDD 130</h1>
+      <img src="images/profile.jpg" alt="Hello, my name is Logan Young" width=" 200">
+      <p>Hello! My name is Logan Young and I am from Orem, Utah. I enjoy building computers, and going on adventures with
+      my wife and family. In this photo you will see my beautiful wife, she's my best friend and brings the most
+      happiness to my life along side Jesus. I'm studfying to be a back-end programmer, and hope to be able to support my family and the Lords kingdom here on earth.    </p>
+    <ul class="box">
+        <li><a href="https://www.churchofjesuschrist.org/temples/details/orem-utah-temple?lang=eng" target="_blank">Orem UT Temple</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/temples/details/provo-city-center-temple?lang=eng" target="_blank">Provo city center Temple</a> </li>
+    </ul>
+    </main>
+    <aside>
+      <h2>Utah | USA</h2>
+      <img src="./images/arches.jpg" alt="Arches National Park">
+      <p>Utah is the place that I call home. This place will always be beatiful to me because its the place I came to know my redeemer</p>
+    </aside>
+  </div>
+  <footer>
+    <aside class="box-2">
+      <p>©️2024 🦍 Logan Young 🦍 Orem, Utah, USA.</p>
+    </aside>
+  </footer>
+</body>
+</html>
