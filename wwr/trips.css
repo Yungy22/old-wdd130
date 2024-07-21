@@ -6,14 +6,17 @@ body {
     color: var(--secondary-color);
     max-width: 1020px;
     padding: 20px;
+    display: block;
   }
+
   :root {
     --primary-color: #64c1e6;
     --secondary-color: #0a2f5c;
     --accent1-color: #daf9ff;
     --accent2-color: #f2ead9;
+    --accent3-color: #036169;
     --heading-font: 'oswald', serif;
-    --paragraph-font: 'roboto', serif;
+    --paragraph-font: 'oswald', serif;
     --nav-background-color: #e7ddcc;
     --nav-link-color: #52bbe7;
     --navv-link-color: #5dd2f3;
@@ -44,10 +47,8 @@ body {
     padding: 10px;
   }
   nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+    color: #e7ddcc;
   }
-  
   .callarticle {
     position: relative;
     text-align: center;
@@ -168,18 +169,21 @@ body {
   }
   
   .calltoaction h2 {
+    color: #036169;
     font-size: 1.5em;
     margin-bottom: 10px;
   }
   
   .calltoaction a {
     font-size: large;
-    font-family: oswald sans-serif;
+    font-family: oswald, sans-serif;
     background-color: transparent;
-    color: teal;
+    color: var(--accent3-color);
     text-decoration: none;
-    
   }  
+  .calltoaction a:hover{
+    color: #f2ead9;
+  }
   footer {
     text-align: center;
     padding: 20px;

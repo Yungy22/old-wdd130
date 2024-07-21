@@ -1,0 +1,145 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body {
+  margin: 0 auto;
+  font-family: var(--paragraph-font);
+  color: var(--secondary-color);
+  max-width: 1020px;
+  padding: 20px;
+}
+:root {
+  --primary-color: #64c1e6;
+  --secondary-color: #0a2f5c;
+  --accent1-color: #daf9ff;
+  --accent2-color: #f2ead9;
+  --heading-font: 'oswald', serif;
+  --paragraph-font: 'oswald', serif;
+  --nav-background-color: #e7ddcc;
+  --nav-link-color: #52bbe7;
+  --navv-link-color: #5dd2f3;
+  --nav-hover-link-color: #f2ead9;
+  --nav-hover-background-color: #fffff2;
+}
+/* header */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+header img {
+  max-height: 50px;
+}
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+/* main */
+main {
+    display: flex; /* Establishes two-column layout */
+  }
+  
+  .hero {
+    width: 100%; /* Ensures hero image fills the first column */
+    position: relative;
+  }
+  
+  .hero img {
+    scale: 90%;
+    padding: 0.5rem 1rem 1rem 1rem ;
+    width: 100%;
+    height: auto;
+  }
+  .superdiv h1 {
+    color: #64c1e6;
+    background-color: #f2ead9;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px 10px 10px 10px;
+    margin: 2rem 0rem 0rem 2rem;
+  }
+  .hero h2 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+  }
+  
+  .content-wrapper { /* Wraps newsletter and CTA sections */
+    width: 100%; /* Fills the second column */
+    display: flex;
+    flex-wrap: wrap; /* Allows content to stack on smaller screens */
+    justify-content: space-between; /* Distributes sections evenly */
+    padding: 20px;
+  }
+  
+  .newsletter,
+  .cta {
+    flex: 1; /* Makes each section occupy half the width */
+    background-color: var(--accent2-color); /* Light background color */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px; /* Spacing between sections */
+    text-align: center; /* Center content within sections */
+  }
+  .cta {
+    color: #e7ddcc;  /* Make text invisible to avoid overlapping image */
+    background-image: url("./images/wave.jpg");  background-size: cover;
+  }
+  
+  .newsletter h2,
+  .cta h2 {
+    margin-bottom: 10px;
+  }
+  .cta h2 {
+    color: #daf9ff;
+  }
+  .cta a {
+    color: #daf9ff;
+    text-decoration: none; /* Dark text color */
+  }
+  .cta a:hover{
+    color: #daf9ff;
+  }
+  .newsletter form {
+    display: flex;
+    flex-direction: column; /* Stacks form elements vertically */
+    gap: 10px; /* Spacing between form elements */
+  }
+  
+  .newsletter label {
+    font-weight: bold;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+}
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent2-color);
+  }
+  footer a {
+    margin: 0 10px;
+  }
