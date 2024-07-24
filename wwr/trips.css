@@ -1,194 +1,215 @@
 /* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 body {
-    margin: 0 auto;
-    font-family: var(--paragraph-font);
-    color: var(--secondary-color);
-    max-width: 1020px;
-    padding: 20px;
-    display: block;
-  }
+  margin: 0 auto;
+  font-family: var(--paragraph-font);
+  color: var(--secondary-color);
+  max-width: 1020px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
 
-  :root {
-    --primary-color: #64c1e6;
-    --secondary-color: #0a2f5c;
-    --accent1-color: #daf9ff;
-    --accent2-color: #f2ead9;
-    --accent3-color: #036169;
-    --heading-font: 'oswald', serif;
-    --paragraph-font: 'oswald', serif;
-    --nav-background-color: #e7ddcc;
-    --nav-link-color: #52bbe7;
-    --navv-link-color: #5dd2f3;
-    --nav-hover-link-color: #f2ead9;
-    --nav-hover-background-color: #fffff2;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-  }
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: var(--accent1-color);
-  }
-  header img {
-    max-height: 50px;
-  }
-  nav {
-    display: flex;
-    gap: 20px;
-  }
-  nav a {
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 10px;
-  }
-  nav a:hover {
-    color: #e7ddcc;
-  }
-  .callarticle {
-    position: relative;
-    text-align: center;
-  }
-  .callarticle img {
-    width: 100%;
-    height: auto;
-  }
-  .calltoaction {
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    background-color: transparent;
-    position: absolute;
-    align-items: center;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-  }
-  
-  .history {
-    margin: 20px 0;
-  }
-  
-  .history img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .history h2 {
-    text-align: center;
-  }
-  
-  .history p {
-    padding: 0 3%;
-  }
-  
-  .adventure {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Ensures even image distribution */
-  }
-  
-  .adventure h2 {
-    text-align: center;
-  }
-  
-  .adventure img {
-    width: 300px; /* Adjust this value to change image size */
-    height: auto;
-    margin: 10px;
-  }
-  /* Trip Descriptions Styles */
+:root {
+  --primary-color: #64c1e6;
+  --secondary-color: #0a2f5c;
+  --accent1-color: #daf9ff;
+  --accent2-color: #f2ead9;
+  --accent3-color: #036169;
+  --heading-font: 'oswald', serif;
+  --paragraph-font: 'oswald', serif;
+  --nav-background-color: #e7ddcc;
+  --nav-link-color: #52bbe7;
+  --navv-link-color: #5dd2f3;
+  --nav-hover-link-color: #f2ead9;
+  --nav-hover-background-color: #fffff2;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: var(--accent1-color);
+}
+.header-title {
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+.brand{
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  max-height: 50px;
+}
+nav {
+  justify-content: space-between;
+  display: flex;
+  gap: 1px;
+}
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+main {
+  background-color: #f2ead9;
+}
+.callarticle {
+  position: relative;
+  text-align: center;
+}
+.callarticle img {
+  width: 100%;
+  height: auto;
+}
+.calltoaction {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.history {
+  margin: 20px 0;
+}
+
+.history img {
+  width: 100%;
+  height: auto;
+}
+
+.history h2 {
+  text-align: center;
+}
+
+.history p {
+  padding: 0 3%;
+}
+
+.adventure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Ensures even image distribution */
+}
+
+.adventure h2 {
+  text-align: center;
+}
+
+.adventure img {
+  width: 300px; /* Adjust this value to change image size */
+  height: auto;
+  margin: 10px;
+}
+/* Trip Descriptions Styles */
 .trip-descriptions {
-    display: flex;
-    flex-wrap: wrap; /* Allows descriptions to stack on smaller screens */
-    justify-content: space-around; /* Ensures even distribution */
-    margin-bottom: 20px;
-  }
-  .trip-descriptions h2{
-    width: 300px; /* Adjust this value to change description width */
-    background-color: var(--accent1-color);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  .trip {
-    width: 300px; /* Adjust this value to change description width */
-    background-color: var(--accent1-color);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .trip img {
-    margin-bottom: 10px;
-    width: 100%;
-    height: auto;
-  }
-  
-  .trip h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-  }
-  
-  /* Trip Table Styles */
-  .trip-table {
-    text-align: center;
-    padding: 0 2rem 3rem 2rem;
-  }
-  
-  .trip-table table {
-    width: 100%;
-    border-collapse: collapse; /* Removes borders between cells */
-  }
-  
-  .trip-table th,
-  .trip-table td {
-    padding: 10px;
-    border: 1px solid var(--secondary-color); /* Adds borders to table */
-  }
-  
-  .trip-table thead th {
-    background-color: var(--primary-color);
-    color: white;
-  }
-  
-  /* Call to Action Styles */
-  .calltoaction {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .calltoaction h2 {
-    color: #036169;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .calltoaction a {
-    font-size: large;
-    font-family: oswald, sans-serif;
-    background-color: transparent;
-    color: var(--accent3-color);
-    text-decoration: none;
-  }  
-  .calltoaction a:hover{
-    color: #f2ead9;
-  }
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--accent2-color);
-  }
-  footer a {
-    margin: 0 10px;
-  }
+background-color: #f2ead9;
+  display: flex;
+  flex-wrap: wrap; /* Allows descriptions to stack on smaller screens */
+  justify-content: space-around; /* Ensures even distribution */
+  margin-bottom: 20px;
+}
+.trip-descriptions h2{
+  width: 300px; /* Adjust this value to change description width */
+  background-color: var(--accent1-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.trip {
+  width: 300px; /* Adjust this value to change description width */
+  background-color: var(--accent1-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.trip img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.trip h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+/* Trip Table Styles */
+.trip-table {
+  text-align: center;
+  padding: 0 2rem 3rem 2rem;
+  background: linear-gradient(45deg, #f2ead9, #f5efe1, #daf9ff, #64c1e6);
+  background-size: 100% 100%;
+  animation: gradient 15s ease infinite;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse; /* Removes borders between cells */
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 10px;
+  border: 1px solid var(--secondary-color); /* Adds borders to table */
+}
+
+.trip-table thead th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Call to Action Styles */
+.calltoaction {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.calltoaction h2 {
+  color: #036169;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.calltoaction a {
+  font-size: large;
+  font-family: oswald, sans-serif;
+  background-color: transparent;
+  color: var(--accent3-color);
+  text-decoration: none;
+}  
+.calltoaction a:hover{
+  color: #f2ead9;
+}
+ /* -------------------footer--------------------- */
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: var(--accent2-color);
+}
+footer a {
+  margin: 0 10px;
+}
+footer a img{
+  max-height: 60px;
+}
