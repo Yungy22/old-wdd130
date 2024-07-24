@@ -115,7 +115,7 @@ main {
   justify-content: space-around; /* This will space your images evenly */
   flex-wrap: wrap; /* This allows the images to wrap to the next line if the container width is not enough */
 }
-.adventure h2{
+.adventure h3{
   text-align: center;
 }
 .adventure img {
