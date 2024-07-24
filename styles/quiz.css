@@ -7,10 +7,12 @@ body {
     height: 100vh;
     margin: 0;
 }
-
+form{
+    padding: 2rem;
+}
 .quiz-form {
     background-color: #fff;
-    padding: 30px;
+    padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -35,8 +37,20 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-#question2{
-    width: 100%;
+#q1{
+    width: 280px;
+    padding: 10px;
+}
+#q2{
+    width: 280px;
+    padding: 10px;
+}
+#q3{
+    width: 305px;
+    padding: 10px;
+}
+#q4{
+    width: 280px;
     padding: 10px;
 }
 
